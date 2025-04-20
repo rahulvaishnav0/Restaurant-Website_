@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Page</title>
+    <link rel="stylesheet" href="OrderNow.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+  
+    <header>
+        <div class="logo">
+              <img src="images/logo-img.png" alt="" style="width: 150px; height: auto;">    
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Chef's Specials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+        </nav>
+        <div class="btn">
+            <a href="./signin.html"><button style="background-color: red;">Signin</button></a>
+            <a href="./OrderNow.html"><button>Order Now</button></a>
+        </div>
+    </header>  
+  <main>
+    <h2>Menu</h2>
+        <section class="menu">
+            <div class="box-slider">
+                <div class="box-slider-container">
+            <div class="box">
+                <img src="images/menu1.jpg" alt="Image 1">
+                <h3>Vietnamese Five-Spice Chicken</h3>
+                <h4>Price: $10</h4>
+                <p>Fragrant, savory chicken marinated in aromatic Vietnamese five-spice powder blend.</p>
+                <button onclick="addToCart('Item 1', 10)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="images/menu2.jpg" alt="Image 2">
+                <h3>Split Pea Soup</h3>
+                <h4>Price: $15</h4>
+                <p>Hearty, comforting soup with split peas, vegetables, and savory seasonings.</p>
+                <button onclick="addToCart('Item 2', 15)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="images/menu3.jpg" alt="Image 3">
+                <h3>Fusilli</h3>
+                <h4>Price: $20</h4>
+                <p>Twisted pasta spirals perfect for capturing sauce, versatile and delicious.</p>
+                <button onclick="addToCart('Item 3', 20)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="images/menu4.jpg" alt="Image 3">
+                <h3>Orange fennel salad</h3>
+                <h4>Price: $23</h4>
+                <p>Refreshing salad with oranges, crunchy fennel, dressed in citrus vinaigrette.</p>
+                <button onclick="addToCart('Item 4', 23)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="images/menu-img-1.jpg" alt="Image 3" style="height: 300px;">
+                <h3>Chaat House</h3>
+                <h4>Price: $30</h4>
+                <p>Vibrant street food flavors, featuring chaats, snacks, and Indian specialties.</p>
+                <button onclick="addToCart('Item 5', 30)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="images/menu-img-2.jpg" alt="Image 3" style="height: 300px;">
+                <h3>Paneer tikka masala</h3>
+                <H4>Price: $50</H4>
+                <p>Creamy tomato-based curry with grilled paneer, a staple Indian favorite.</p>         
+                <button onclick="addToCart('Item 6', 50)">Add to Cart</button>
+
+            </div>
+           
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+                </div>
+
+
+           
+          
+        </section>
+
+        <section class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+    
+
+            </ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    <!-- </main> -->
+
+    <script src="OrderNow.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
